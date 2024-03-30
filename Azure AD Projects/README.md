@@ -1,5 +1,5 @@
 
-# Azure Homelab setup
+# Azure Part 1
 
 ## Overview
 This first project contains detailed documentation of creating a home lab environment on Microsoft Azure. The setup involved deploying two virtual machines (VMs) - a Windows 10 PC and a Windows Server 2019.
