@@ -34,3 +34,5 @@ In the second part of the Azure AD project, I performed the following tasks:
    - Logged into the PC as the new user via RDP
    - Confirmed access to the shared folder and created a test text file
 
+## Conclusion
+This concludes the second part of the Azure Active Directory project. In the next part, I will utilize Powershell to create more accounts and configure the server with DHCP.
