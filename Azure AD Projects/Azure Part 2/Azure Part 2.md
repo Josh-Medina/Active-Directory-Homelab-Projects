@@ -1,4 +1,4 @@
-## Creating New User, Modifying Password Policies, and Setting Permissions
+## Creating Users, Password Policy Adjustments, Permission Settings, and Folder Mapping
 
 In this second part of the Azure AD project, I created a new user with Powershell, modified password policies, and granted RDP permissions to the user. I also mapped and created a shared folder on the server for the new user.
 Finally I created a sample text document to ensure proper configuration.
