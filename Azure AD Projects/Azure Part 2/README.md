@@ -9,7 +9,7 @@ In the second part of the Azure AD project, I performed the following tasks:
 - Mapped and created a shared folder for the new user
 - Logged into the PC as the new user and created a sample text document to ensure proper configuration
 
-## Detailed Steps
+## Steps
 1. **Creating a New User with Powershell**
    - Imported the Active Directory module
    - Created a new user using the `new-aduser` command
