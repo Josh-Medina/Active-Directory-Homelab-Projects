@@ -35,4 +35,4 @@ In the second part of the Azure AD project, I performed the following tasks:
    - Confirmed access to the shared folder and created a test text file
 
 ## Conclusion
-This concludes the second part of the Azure Active Directory project. In the next part, I will utilize Powershell to create more accounts and configure the server with DHCP.
+This concludes the 2nd part of the Azure Active Directory project. In the 3rd and final part, I’ll utilize Powershell to create some organizational units, group policy objects, and users.
