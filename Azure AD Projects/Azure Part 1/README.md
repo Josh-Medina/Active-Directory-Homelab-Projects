@@ -14,12 +14,12 @@ This first project contains detailed documentation of creating a home lab enviro
 ## Project Steps
 
 ### Azure Setup
-1. Signed up for a 30-day free trial with Azure.
-2. Created a resource group and deployed Windows 10 and Windows Server 2019 VMs.
+- Signed up for a 30-day free trial with Azure.
+- Created a resource group and deployed Windows 10 and Windows Server 2019 VMs.
 
 ### Active Directory Configuration
-1. Installed Active Directory Domain Services role on the Windows Server VM.
-2. Configured the domain name as domain.homelab.
+- Installed Active Directory Domain Services role on the Windows Server VM.
+- Configured the domain name as domain.homelab.
 
 ### Troubleshooting
 - Encountered login issues due to password length requirements (15 characters for the Windows Server VM).
@@ -36,9 +36,9 @@ This first project contains detailed documentation of creating a home lab enviro
 - partially deleted Windows 10 VM and recreated it within the same Vnet as Windows Server 2019.
 
 ### Joining VMs to Domain
-1. Updated DNS settings to point to the domain controller.
-2. Joined the Windows 10 VM to the domain (domain.homelab).
-3. Verified successful domain join and user authentication.
+- Updated DNS settings to point to the domain controller.
+- Joined the Windows 10 VM to the domain (domain.homelab).
+- Verified successful domain join and user authentication.
 
 ## Conclusion
 The project successfully established a home lab environment on Azure, enabling hands-on learning and experimentation with Windows Server, Active Directory, and network configurations.
