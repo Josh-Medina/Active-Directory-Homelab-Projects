@@ -3,26 +3,26 @@
 In this second part of the Azure AD project, I created a new user with Powershell, modified password policies, and granted RDP permissions to the user. I also mapped and created a shared folder on the server for the new user.
 Finally I created a sample text document to ensure proper configuration.
 
-### Creating a New User with Powershell
+### Step 1: Creating a New User with Powershell
 
 The first step was to use Powershell to create a new user. I began by running the command `Import-Module ActiveDirectory` to import the module for Active Directory. Then, I created a user with the command `new-aduser Wookie`. To verify its creation, I ran the command `Get-ADUser -Filter * | Select-Object Name`.
 
 ![Screenshot 2024-04-04 6 27 24 PM](https://github.com/Josh-Medina/Active-Directory-Homelab-Projects/assets/162754106/d5ac9746-da74-4d0b-874c-cd267ee460b5)
 
-### Modifying Password Policies
+### Step 2: Modifying Password Policies
 
 I attempted to set a password for Wookie but encountered an error stating that the password didn't fulfill the requirements. I addressed this issue by accessing the Group Policy Management option. From there, I right-clicked the Default Domain Policy and chose Edit. I then clicked Policies -> Windows Settings -> Security Settings - Account Policies -> Password Policy.
 
 ![Screenshot 2024-04-04 6 20 35 PM](https://github.com/Josh-Medina/Active-Directory-Homelab-Projects/assets/162754106/18e56b55-f6c8-4234-9bab-f781624ee427)
 
 Here is where I can edit the password policies to whatever I decide. After clicking apply, I refreshed everything and was able to add the password I wanted to use and activate Wookie. For demonstration purposes, I weakened the password requirements.
-### Granting RDP Permissions
+### Step 3: Granting RDP Permissions
 
 I proceeded to give Wookie the ability to RDP into the Windows 10 PC. I did this by going to Computer Management -> clicking on groups in the Local User and Groups dropdown -> then selecting Remote Desktop Users -> clicking Add -> typing the name until it populated automatically and clicking ok. I could then log in via RDP as the user Wookie.
 
 ![add wookie rdp user](https://github.com/Josh-Medina/Active-Directory-Homelab-Projects/assets/162754106/13e4794d-f26f-4868-9e56-7338baf61ca9)
 
-### Mapping a Folder and Creating a Shared Folder
+### Step 4: Mapping a Folder and Creating a Shared Folder
 
 Moving on, I mapped and created a shared folder specifically for Wookie. This involved accessing the Server Manager dashboard and selecting File and Storage Manager Services on the left -> Shares -> right clicking and selecting New Share. Here it gives options for how to set up the folder. I only modified the name to “wookies.folder” to keep it simple and created it. 
 
@@ -40,7 +40,7 @@ Next I navigated to the path of the folder and added a home folder to Wookie's f
 ![Screenshot 2024-04-04 7 00 32 PM](https://github.com/Josh-Medina/Active-Directory-Homelab-Projects/assets/162754106/2fc25dc6-aef8-49f5-b75c-3749d75a3a25)
 ![wookies home folder](https://github.com/Josh-Medina/Active-Directory-Homelab-Projects/assets/162754106/f51f1607-917b-47bd-af8d-87a92feba411)
 
-### Final Verification
+### Step 5: Final Verification
 
 Finally, I logged out of the domain power-user on the Windows 10 VM and RDP’d in as Wookie. Upon successful connection, I navigated to the W drive and confirmed access to the shared folder.
 
