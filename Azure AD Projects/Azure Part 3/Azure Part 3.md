@@ -1,4 +1,4 @@
-# Introduction:
+# Active Directory with PowerShell: Creating OUs, Groups, GPOs and Users
 In this lab, I explored the capabilities of PowerShell in managing Active Directory Domain Services (AD DS). My objective was to create Organizational Units (OUs), establish departmental groups, and configure Group Policy Objects (GPOs) to enforce specific settings within the AD DS environment. 
 
 By leveraging PowerShell, I aimed to streamline administrative tasks and ensure efficient management of AD DS resources. In the last step I also leveraged Powershell to create users in the environment.
