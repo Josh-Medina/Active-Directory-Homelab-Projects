@@ -1,7 +1,7 @@
-# Active Directory Management with Powershell
+# Azure Active Directory Project - Part 3
 
 ## Overview
-This lab explores the capabilities of PowerShell in managing Active Directory Domain Services (AD DS). The objective is to create Organizational Units (OUs), establish departmental groups, configure Group Policy Objects (GPOs), and manage users within the AD DS environment.
+In this final lab, I explore the capabilities of PowerShell in managing Active Directory Domain Services (AD DS). The objective is to create Organizational Units (OUs), establish departmental groups, configure Group Policy Objects (GPOs), and manage users within the AD DS environment.
 
 ## Steps
 
