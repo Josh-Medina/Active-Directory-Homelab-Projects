@@ -2,7 +2,7 @@
 Today I’m creating 2 virtual machines on Azure - a Windows 10 PC and a Windows Server 2019. After creating them, I’ll log in to the server and install the Active Directory Domain Services role. Then I'll put both machines on the same VNet so they can communicate with each other and join them on the same Domain in Active Directory. I could’ve configured them to be on the same VNet from the start, but I wanted to demonstrate the process of moving a VM to another VNet.
 
 
-## Getting Started with Azure
+## Step 1: Getting Started with Azure
 
 Azure allows for a 30-day free trial and a $200 credit for signing up. After signing up it brought me to the main dashboard where I clicked on virtual machines and then clicked create Azure virtual machine. There are many options to choose from but I stuck with the simple & free options for both of my machines. During the process, it prompted me to create an Administrator account and password to be able to log in.
 
@@ -16,7 +16,7 @@ Despite using the same password for both it would not let me log in. I ended up 
 
 I was about to delete the VM and create a new one until I finally figured out that I had to use 15 characters to be able to log in to the Server. I thought I was going crazy because I could not find any other issues, so that is a mistake I'll be sure never to make again. This [video](link_to_video) here is what helped me finally figure it out.
 
-## Installing Active Directory Domain Services
+## Step 2: Installing Active Directory Domain Services
 
 Now that I was passed that issue, I can log in to the server and configure it for Active Directory Domain Services. I did this simply by going into the server manager, clicking on the manage tab on the top right, and choosing “Add roles and features”. I chose the installation type “role-based or feature-based installation”.
 
@@ -26,7 +26,7 @@ From here it brought me to server roles, there was a big list of roles to choose
 ![ADD services install](https://github.com/Josh-Medina/Active-Directory-Homelab-Projects/assets/162754106/a78b2d39-abf2-46a2-aba4-75e2968a9e5f)
 
 
-## Joining VMs to the same Vnet
+## Step 3: Joining VMs to the same Vnet
 
 In this next part, I took the following steps before I realized that the VMs are on 2 different vnets and cannot communicate. The first thing I did was open the command prompt and attempt to ping the server to see if communication could be established. They would not ping each other.
 
@@ -58,7 +58,7 @@ I also made sure to adjust the firewall settings on the Windows 10 VM to allow i
 ![ping pc from server firewall settings](https://github.com/Josh-Medina/Active-Directory-Homelab-Projects/assets/162754106/8dc982f7-4643-49f7-a1cd-0b98adb6b7da)
 
 
-## Joining VMs to the Domain
+## Step 4: Joining VMs to the Domain
 
 Finally, I was able to join the Windows 10 VM to the domain of the 2019 server. After going into the pc I followed the same prior steps: control panel -> view network status and tasks -> change adaptive settings -> double click on ethernet -> click properties ->click internet protocol version 4 (TCP/IPV4) -> properties -> choose “use the following DNS server address”, then entered the private IPV4 address for the server (10.0.0.4).
 
