@@ -1,4 +1,4 @@
-# Setting Up Azure Virtual Machines and Active Directory Domain Services
+# Azure VM Configuration: Setting up Active Directory, VNet Communication, and Domain Joining
 Today I’m creating 2 virtual machines on Azure - a Windows 10 PC and a Windows Server 2019. After creating them, I’ll log in to the server and install the Active Directory Domain Services role. Then I'll put both machines on the same VNet so they can communicate with each other and join them on the same Domain in Active Directory. I could’ve configured them to be on the same VNet from the start, but I wanted to demonstrate the process of moving a VM to another VNet.
 
 
