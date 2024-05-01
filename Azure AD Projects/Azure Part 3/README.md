@@ -29,4 +29,4 @@ In this final lab, I explore the capabilities of PowerShell in managing Active D
 ## Conclusion
 This is the conclusion of the Azure AD Projects series. This lab showcases how PowerShell can be utilized to manage specific components of Active Directory resources. Through PowerShell's capabilities, administrative tasks like creating and managing Organizational Units (OUs), Group Policy Objects (GPOs), and users can be automated. 
 
-I will eventually put all the Powershell scripts I wrote for this lab into one single script and use it for another AD environment that I will be creating.
+I will eventually put all the Powershell scripts I wrote for this lab into one single script and use it for another AD environment that I will be creating in AWS.
