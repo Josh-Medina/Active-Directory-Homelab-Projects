@@ -1,5 +1,5 @@
 
-# AWS Active Directory Project Part 2
+# AWS Active Directory Project - Part 2
 
 # Overview
 This 2nd project in this series contains the steps involved in configuring Active Directory Domain Services (AD DS) on an AWS Windows Server 2019 instance. 
