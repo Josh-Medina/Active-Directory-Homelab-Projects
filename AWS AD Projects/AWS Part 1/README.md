@@ -1,4 +1,4 @@
-# AWS Active Directory Project Part 1
+# AWS Active Directory Project - Part 1
 
 ## Overview
 
